@@ -17,34 +17,15 @@
   <body>
     <div class="container">
       <h1>World Clock</h1>
-      <select>
+      <select id="city-search">
         <option value="">Select a city...</option>
-        <option value="London">London</option>
-        <option value="Paris">Paris</option>
-        <option value="New York">New York</option>
+        <option value="Europe/London">London</option>
+        <option value="Europe/Paris">Paris</option>
+        <option value="America/New_York">New York</option>
       </select>
 
-      <div
-        class="city"
-        id="los-angeles"
-      >
-        <div>
-          <h2>Los Angeles</h2>
-          <div class="date"></div>
-        </div>
-        <div class="time"></div>
-      </div>
+      <div id="cities"></div>
 
-      <div
-        class="city"
-        id="sydney"
-      >
-        <div>
-          <h2>Sydney</h2>
-          <div class="date"></div>
-        </div>
-        <div class="time"></div>
-      </div>
       <footer>
         Coded 👩‍💻 by
         <a
