@@ -1,7 +1,66 @@
+body {
+  background-color: #f9f7fe;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 60px auto;
+  max-width: 600px;
+  padding: 30px;
+}
+
+select {
+  border-radius: 6px;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+}
+
 h1 {
+  font-family: arial;
   text-align: center;
 }
 
+.city {
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 30px 0;
+}
+
+.city:last-child {
+  border: none;
+}
+
+h2 {
+  font-family: arial;
+  font-size: 28px;
+  margin: 0 0 5px;
+}
+
+.date {
+  font-family: arial;
+  opacity: 0.7;
+}
+
+.time {
+  font-family: arial;
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.time small {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
 footer {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  opacity: 0.8;
   text-align: center;
 }
