@@ -10,6 +10,19 @@
       rel="stylesheet"
       href="src/draft.css"
     />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <title>World Clock DRAFT 🕰️</title>
@@ -20,7 +33,7 @@
 
       <select id="city-search">
         <option value="">Select a city...</option>
-        <option value="current">My location</option>
+        <option value="current">My time zone</option>
         <option value="Europe/London">London</option>
         <option value="Europe/Paris">Paris</option>
         <option value="America/New_York">New York</option>
@@ -33,7 +46,7 @@
           id="los-angeles"
         >
           <div>
-            <h2>Los Angeles</h2>
+            <h2>LOS ANGELES</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>
@@ -43,34 +56,45 @@
           id="sydney"
         >
           <div>
-            <h2>Sydney</h2>
+            <h2>SYDNEY</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+
+        <div
+          class="city"
+          id="istanbul"
+        >
+          <div>
+            <h2>ISTANBUL</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>
         </div>
       </div>
-
-      <footer>
-        Coded 👩‍💻 by
-        <a
-          href="https://github.com/j4mieLeigh"
-          target="_blank"
-          >Jamie Leigh</a
-        >
-        | Open-sourced 👋 on
-        <a
-          href="https://github.com/j4mieLeigh/World-Clock-DRAFT"
-          target="_blank"
-          >Github</a
-        >
-        | Hosted 🥳 by
-        <a
-          href="https://harmonious-custard-cefc30.netlify.app/"
-          target="_blank"
-          >Netlify</a
-        >
-      </footer>
     </div>
+    <footer>
+      Coded 👩‍💻 by
+      <a
+        href="https://github.com/j4mieLeigh"
+        target="_blank"
+        >Jamie Leigh</a
+      >
+      | Open-sourced 👋 on
+      <a
+        href="https://github.com/j4mieLeigh/World-Clock-DRAFT"
+        target="_blank"
+        >Github</a
+      >
+      | Hosted 🥳 by
+      <a
+        href="https://harmonious-custard-cefc30.netlify.app/"
+        target="_blank"
+        >Netlify</a
+      >
+    </footer>
+
     <script src="src/draft.js"></script>
   </body>
 </html>

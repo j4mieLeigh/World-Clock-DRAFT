@@ -1,5 +1,5 @@
 function updateTime() {
-  // LA
+  // Los Angeles
 
   let losAngelesElement = document.querySelector("#los-angeles");
   if (losAngelesElement) {
@@ -28,6 +28,21 @@ function updateTime() {
       "h:mm:ss [<small>]A[</small>]"
     );
   }
+
+  // Istanbul
+
+  let istanbulElement = document.querySelector("#istanbul");
+  if (istanbulElement) {
+    let istanbulDateElement = istanbulElement.querySelector(".date");
+    let istanbulTimeElement = istanbulElement.querySelector(".time");
+    let istanbulTime = moment().tz("Asia/Istanbul");
+
+    istanbulDateElement.innerHTML = istanbulTime.format("MMMM Do YYYY");
+
+    istanbulTimeElement.innerHTML = istanbulTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
 }
 
 function updateCity(event) {
@@ -35,9 +50,10 @@ function updateCity(event) {
   if (cityTimeZone === "current") {
     cityTimeZone = moment.tz.guess();
   }
-  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1].toUpperCase();
   let cityTime = moment().tz(cityTimeZone);
   let citiesElement = document.querySelector("#cities");
+
   citiesElement.innerHTML = `<div
           class="city">
           <div>
@@ -49,7 +65,9 @@ function updateCity(event) {
           )} <small>${cityTime.format("A")}
             </small>
           </div>
-        </div>`;
+        </div>
+        <a href="index.html" class="back">Back</a>
+        `;
 }
 
 updateTime();

@@ -3,25 +3,34 @@ body {
 }
 
 .container {
-  background-color: white;
+  background-color: #c1e0d1;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  margin: 60px auto;
+  margin: 60px auto 30px;
   max-width: 600px;
   padding: 30px;
 }
 
+h1 {
+  color: #013261;
+  font-family: "Roboto", sans-serif;
+  font-size: 42px;
+  text-align: center;
+}
+
 select {
+  background-color: #f9f7fe;
+  border-style: none;
   border-radius: 6px;
   display: block;
   font-size: 16px;
+  margin: 0 auto;
   padding: 10px;
-  width: 100%;
+  width: 80%;
 }
 
-h1 {
-  font-family: arial;
-  text-align: center;
+select:hover {
+  cursor: pointer;
 }
 
 .city {
@@ -29,7 +38,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .city:last-child {
@@ -37,20 +46,23 @@ h1 {
 }
 
 h2 {
-  font-family: arial;
-  font-size: 28px;
+  color: #013261;
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 34px;
   margin: 0 0 5px;
 }
 
 .date {
-  font-family: arial;
+  color: #ff5d44;
+  font-family: "Roboto", sans-serif;
   opacity: 0.7;
 }
 
 .time {
-  font-family: arial;
+  color: #013261;
+
+  font-family: "Ubuntu Mono", monospace;
   font-size: 48px;
-  font-weight: bold;
 }
 
 .time small {
@@ -58,10 +70,20 @@ h2 {
   vertical-align: middle;
 }
 
-footer {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 13px;
+.back {
+  font-family: "Roboto", sans-serif;
   opacity: 0.8;
+}
+
+a {
+  color: #ff5d44;
+}
+
+footer {
+  color: #013361ec;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  margin: 0 0 60px 0;
   padding: 10px 0 0 0;
   text-align: center;
 }
